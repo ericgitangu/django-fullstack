@@ -1,0 +1,28 @@
+# Ignore compiled files
+*.class
+*.jar
+*.war
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore logs
+*.log
+
+# Ignore dependencies
+/node_modules/
+
+# Ignore Django specific files
+*.pyc
+__pycache__/
+*.sqlite3
+
+# Ignore Django Rest Framework specific files
+*.pyo
+*.swp
+*.swo
+
+# Ignore MySQL specific files
+*.mysql
+*.sql

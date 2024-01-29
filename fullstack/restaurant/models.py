@@ -1,5 +1,7 @@
+import datetime
 from django.db import models
 from django import forms
+import datetime
 
 class Booking(models.Model):
     """
@@ -41,6 +43,10 @@ class BookingForm(forms.ModelForm):
         # Perform sanitization logic here
         # Example: Ensure the slot is within a valid range
         return reservation_slot
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.attrs.update({'min': datetime.date.today().strftime('%Y-%m-%d')})
 
 class Menu(models.Model):
     """

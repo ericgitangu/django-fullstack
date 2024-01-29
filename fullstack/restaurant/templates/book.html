@@ -72,11 +72,11 @@
           for (item of data) {
             reserved_slots.push(item.fields['reservation_slot'])
             console.log(item.fields)
-            bookings += `<p>${item.fields['first_name']} - ${item.fields['reservation_date']} at ${formatTime(item.fields['reservation_slot'])} </p>`
+            bookings += `<p>${item.fields['first_name']} - reserved the time slot: ${formatTime(item.fields['reservation_slot'])} </p>`
           }
           /* Step 12: Part four  */
 
-          let slot_options = '<option value="0" disabled selected="selected">Select time</option>';
+          let slot_options = '<option value="0" disabled">Select time</option>';
           {% comment %} console.log(reserved_slots) {% endcomment %}
 
           for (let i = 10; i <= 20; i++) {

@@ -28,4 +28,6 @@ __pycache__/
 *.sql
 
 # File System folders
-.DS_Store 
+.DS_Store
+Thumbs.db
+```

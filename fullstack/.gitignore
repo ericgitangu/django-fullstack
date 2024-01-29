@@ -26,3 +26,6 @@ __pycache__/
 # Ignore MySQL specific files
 *.mysql
 *.sql
+
+# File System folders
+.DS_Store 
